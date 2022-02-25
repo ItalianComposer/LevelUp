@@ -6,14 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+  <script defer src="jquery-3.6.0.js"></script>
   <title>LevelUp</title>
 </head>
 <body>
   <header class="header">
 
   </header>
-  <div class="content">
-    <section class="content__promo">
+  <div class="first_block">
+    <section class="first_block__promo">
       <video class="bg_video" loop="loop" autoplay="" muted="muted">
         <source src="video/bg-video.mp4">
       </video>
@@ -35,6 +36,41 @@
         </div>
       </div>
     </section>
+  </div>
+  <div class="content__product_structure">
+    <div class="product__structure">
+      <div class="card first_row first_column"><div class="card__content">
+        <p class="ingredient font__open_sans_400">Fish head</p>
+        </div>
+      </div>
+      <div class="card second_row first_column"><div class="card__content">
+        <p class="ingredient font__open_sans_400">Fish body</p>
+        </div>
+      </div>
+      <div class="card third_row first_column"><div class="card__content">
+        <p class="ingredient font__open_sans_400">Fish tail</p>
+        </div>
+      </div>
+
+      <img class="photo second_column second_row" src="img/prod.png">
+
+      <div class="card first_row third_column"><div class="card__content">
+        <p class="ingredient font__open_sans_400">Fish head</p>
+        </div>
+      </div>
+      <div class="card second_row third_column"><div class="card__content">
+        <p class="ingredient font__open_sans_400">Fish body</p>
+        </div>
+      </div>
+      <div class="card third_row third_column"><div class="card__content">
+        <p class="ingredient font__open_sans_400">Fish tail</p>
+        </div>
+      </div>
+      <button class="promo__buy button second_column third_row" type="button" name="buy">
+        <span>Заказать</span>
+        <div class="liquid"></div>
+      </button>
+    </div>
   </div>
   <footer class="footer">
 
