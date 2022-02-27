@@ -164,6 +164,30 @@
       <li class="features_li promo_li font__open_sans_400">Fresh fish</li>
     </ul>
   </div>
+  <div class="order_form">
+    <div class="order_form_header">
+    <p class="promo__name font__open_sans_400">LevelUp</p>
+      <div class="timer" id="timer">
+        <div class="timer__items">
+          <div class="timer__item timer__minutes">00</div>
+          <div class="timer__item timer__seconds">00</div>
+        </div>
+      </div>
+    </div>
+    <div class="price">
+      <span class="old_price font__open_sans_400">9999p</span>
+      <span class="new_price font__open_sans_400">999p</span>
+    </div>
+    <div class="buy_form">
+      <input class="buy_form_input" id="ph_i" onclick="showTooltip(this,'Иван Иванов')" onmouseout="hideTooltip(this)" type="text" name="Name" value="" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]{3,}"><span class="tooltip" id="ph_t"></span>
+      <input class="buy_form_input" id="ad_i" onclick="showTooltip(this,'+71234567890')" onmouseout="hideTooltip(this)" type="number" name="Phone" value="" placeholder="Phone" pattern="[0-9]{5,10}"><span class="tooltip" id="ad_t"></span>
+      <button class="promo__buy button" type="button" name="buy">
+        <span>Заказать</span>
+        <div class="liquid"></div>
+      </button>
+    </div>
+    <img class="photo second_column" src="img/prod.png">
+  </div>
   <footer class="footer"></footer>
 </body>
 </html>
