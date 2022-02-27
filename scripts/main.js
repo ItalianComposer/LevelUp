@@ -31,3 +31,24 @@ document.addEventListener('DOMContentLoaded', function () {
   countdownTimer();
   timerId = setInterval(countdownTimer, 1000);
 });
+
+// подсказка при наведении на поле ввода
+function showTooltip(e, text) {
+    var e_id = e.id;
+    var tt_id = e_id.substring(0, e_id.indexOf('_') + 1) + 't';
+    var tt = document.getElementById(tt_id);
+
+    tt.style.top = e.offsetTop + -35 + 'px';
+    tt.style.left = e.offsetLeft + 160 + 'px';
+    tt.innerHTML = text||'tooltip';
+    tt.style.width = '100px';
+    tt.style.display = 'block';
+}
+
+function hideTooltip(e) {
+    var e_id = e.id;
+    var tt_id = e_id.substring(0, e_id.indexOf('_') + 1) + 't';
+    var tt = document.getElementById(tt_id);
+
+    tt.style.display = 'none';
+}
